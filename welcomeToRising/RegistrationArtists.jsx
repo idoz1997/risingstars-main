@@ -142,7 +142,7 @@ export default function RegistrationArtists({ navigation }) {
       }
       try {
         const response = await fetch(
-          "http://10.100.102.181:5500/api/users/signup",
+          "http://10.57.0.122:5500/api/users/signup",
           {
             method: "POST",
             headers: {

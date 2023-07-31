@@ -33,7 +33,7 @@ export default function Login({ navigation }) {
     console.log("enter to second catch");
     try {
       const response = await fetch(
-        "http://10.100.102.181:5500/api/users/signin",
+        "http://10.57.0.122:5500/api/users/signin",
         {
           method: "POST",
           headers: {
@@ -45,12 +45,12 @@ export default function Login({ navigation }) {
 
       if (response.ok) {
         Alert.alert("Signed In Successfully");
-        navigation.navigate("WelcomeScreen");
+        navigation.navigate("ProfilePageArtist");
       }
     } catch (error) {
       try {
         const response = await fetch(
-          "http://10.100.102.181:5500/api/business/signin",
+          "http://10.57.0.122:5500/api/business/signin",
           {
             method: "POST",
             headers: {
@@ -67,7 +67,7 @@ export default function Login({ navigation }) {
       } catch (error) {
         try {
           const response = await fetch(
-            "http://10.100.102.181:5500/api/admin/signin",
+            "http://10.57.0.122:5500/api/admin/signin",
             {
               method: "POST",
               headers: {

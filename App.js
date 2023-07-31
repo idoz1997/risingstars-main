@@ -10,6 +10,7 @@ import RegistrationBussines from "./welcomeToRising/RegistrarionBussines/Registr
 import RegistrationPayment from "./welcomeToRising/RegistrarionBussines/RegistrationPayment";
 import RSContextProvider from "./welcomeToRising/Context/RSContextProvider";
 import Admin from "./welcomeToRising/AdminPage/Admin";
+import ProfilePageArtist from "./ProfilePageArtist";
 
 const Stack = createStackNavigator();
 
@@ -51,6 +52,11 @@ export default function App() {
            <Stack.Screen
             name="Admin"
             component={Admin}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="ProfilePageArtist"
+            component={ProfilePageArtist}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

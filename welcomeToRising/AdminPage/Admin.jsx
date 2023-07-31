@@ -6,8 +6,8 @@ import NavHeader from "../NavHeader";
 import { ScrollView } from "react-native-gesture-handler";
 
 export default function Admin({ navigation }) {
-  const apiUrlArtist = "http://10.100.102.181:5500/api/users";
-  const apiUrlBusiness = "http://10.100.102.181:5500/api/business";
+  const apiUrlArtist = "http://localhost:5500/api/users";
+  const apiUrlBusiness = "http://localhost:5500/api/business";
 
   const [usersCounters, setUsersCounters] = useState(0);
   const [businessCounters, setBusinessCounters] = useState(0);

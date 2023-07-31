@@ -61,7 +61,7 @@ export default function RegistrationPayment({ navigation }) {
 
     try {
       const response = await fetch(
-        "http://10.100.102.181:5500/api/creditcard/addcard",
+        "http://10.57.0.122:5500/api/creditcard/addcard",
         {
           method: "POST",
           headers: {
@@ -73,7 +73,7 @@ export default function RegistrationPayment({ navigation }) {
       if (response.ok) {
         try{
           const response = await fetch(
-            "http://10.100.102.181:5500/api/business/signup",
+            "http://10.57.0.122:5500/api/business/signup",
             {
               method: "POST",
               headers: {
